@@ -7,9 +7,9 @@ public class GCDOS {
     public static void main(String[] args) {
 
       Scanner entrada = new Scanner(System.in);
-        System.out.println("Primer número:");
+        System.out.println("Primer String:");
       String str1= entrada.nextLine();
-        System.out.println("Segundo número:");
+        System.out.println("Segundo String:");
       String str2= entrada.nextLine();
 
 
