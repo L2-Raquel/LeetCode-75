@@ -26,7 +26,7 @@ public class CPF {
                 }
             }
         }
-
+//        Boolean solucion=(contador>=n)?true:false;
         if(contador>=n){
             canPlaceFlowers=true;
         }
