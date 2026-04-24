@@ -3,6 +3,30 @@ package FindPivotIndex_724;
 public class FPI {
     public static void main(String[] args) {
 int[] nums = {1,7,3,6,5,6};
+int total =0;
+int sumaIzquierda =0;
+int pivote = -1;
+
+for(int i=0;i<nums.length;i++) {
+    total += nums[i];
+}
+
+boolean encontrado =false;
+int indice =0;
+while(indice<nums.length && !encontrado) {
+
+    if(sumaIzquierda == (total - sumaIzquierda - nums[indice])) {
+        pivote = indice;
+        encontrado = true;
+    }
+
+    sumaIzquierda+=nums[indice];
+
+indice++;
+}
+
+        System.out.println(pivote);
+
 
     }
 }
